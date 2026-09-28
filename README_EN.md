@@ -11,6 +11,11 @@
 
 This is not "let AI search the web for industry info." That gives you *material*. This tells you *which one to do first*.
 
+<p align="center">
+  <img src="docs/preview-hero.jpg" alt="One-page overview (Chinese)" width="660">
+</p>
+<p align="center"><sub>👆 Full one-pager (1800×12731, Chinese): <a href="docs/preview-full.jpg">docs/preview-full.jpg</a></sub></p>
+
 [简体中文](./README.md)
 
 ---
@@ -236,23 +241,29 @@ Priority = Pervasiveness×0.30 + Severity×0.25 + WillingnessToPay×0.25 + AI-Fi
 industry-painpoint-research/
 ├── README.md                      Chinese version
 ├── README_EN.md                   This file
+├── CHANGELOG.md                   v1 → v3 design evolution
+├── LICENSE                        MIT
+├── .gitignore
 ├── SKILL.md                       Main flow: five stages + eight categories + scoring + fallbacks
 ├── agents/
 │   ├── 01-industry-scanner.md     Industry scanner
 │   ├── 02-competitive-analyst.md  Competitive analyst
 │   ├── 03-painpoint-hunter.md     Painpoint hunter
 │   └── 04-ai-scout.md             AI scout
-└── references/
-    ├── bundled-methods.md         Bundled methods (why there are zero dependencies)
-    ├── report-template.md         8-chapter skeleton + depth-tier adaptation
-    ├── quality-checklist.md       14 quality checks + bias self-audit + style guide
-    └── sub-agents.md              Sub-agent task templates
-└── examples/
-    ├── README.md                  Examples guide (read first: all illustrative)
-    ├── sample-input.md            5 copy-pasteable starter prompts
-    ├── sample-output-quick-scan.md   🚀 Quick scan output
-    ├── sample-output-standard.md     🔍 Standard 8-chapter output
-    └── sample-output-minimal.md      Degraded output: minimum viable report
+├── references/
+│   ├── bundled-methods.md         Bundled methods (why there are zero dependencies)
+│   ├── report-template.md         8-chapter skeleton + depth-tier adaptation
+│   ├── quality-checklist.md       14 quality checks + bias self-audit + style guide
+│   └── sub-agents.md              Sub-agent task templates
+├── examples/
+│   ├── README.md                  Examples guide (read first: all illustrative)
+│   ├── sample-input.md            5 copy-pasteable starter prompts
+│   ├── sample-output-quick-scan.md   🚀 Quick scan output
+│   ├── sample-output-standard.md     🔍 Standard 8-chapter output
+│   └── sample-output-minimal.md      Degraded output: minimum viable report
+└── docs/
+    ├── preview-hero.jpg           Hero image embedded in this README
+    └── preview-full.jpg           Full one-pager (1800×12731, Chinese)
 ```
 
 **Minimum files to run**: `SKILL.md` + `agents/` + `references/bundled-methods.md`. The rest is optional.
@@ -322,7 +333,7 @@ Search queries with hardcoded years **fail silently** — no error, no crash, ju
 
 ## Contributing
 
-Issues and PRs welcome. Especially:
+Issues and PRs welcome. The design evolution (why v1 became v3) is documented in [CHANGELOG.md](./CHANGELOG.md). Especially:
 
 - **Real industry reports** — what you got (redacted) is the best test case
 - **Painpoint categories** — which industries have a painpoint the eight categories miss?

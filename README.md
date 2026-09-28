@@ -13,6 +13,11 @@
 
 它不是「让 AI 帮你搜行业资料」。前者产出的是资料，后者产出的是**先做哪个**。
 
+<p align="center">
+  <img src="docs/preview-hero.jpg" alt="一页看懂这套系统" width="660">
+</p>
+<p align="center"><sub>👆 完整介绍长图（1800×12731）见 <a href="docs/preview-full.jpg">docs/preview-full.jpg</a></sub></p>
+
 ---
 
 ## 目录
@@ -236,6 +241,7 @@ cp -r industry-painpoint-research ~/.workbuddy/skills/
 industry-painpoint-research/
 ├── README.md                      本文件（简体中文）
 ├── README_EN.md                   English version
+├── CHANGELOG.md                   更新日志：v1 → v3 的设计演进
 ├── LICENSE                        MIT
 ├── .gitignore
 ├── SKILL.md                       主流程：五阶段 + 八类痛点 + 四维矩阵 + 降级策略
@@ -244,17 +250,20 @@ industry-painpoint-research/
 │   ├── 02-competitive-analyst.md  竞争情报员
 │   ├── 03-painpoint-hunter.md     痛点猎手
 │   └── 04-ai-scout.md             AI 侦察兵
-└── references/
+├── references/
     ├── bundled-methods.md         内置方法库（零依赖的关键）
     ├── report-template.md         8 章骨架 + 档位适配
     ├── quality-checklist.md       14 项质检 + 偏见自查 + 写作风格
     └── sub-agents.md              子代理任务分配模板
-└── examples/
+├── examples/
     ├── README.md                  样例说明（必读：均为结构示意）
     ├── sample-input.md            5 组可直接复制的启动提示词
     ├── sample-output-quick-scan.md   🚀 快速扫描档输出
     ├── sample-output-standard.md     🔍 标准研究档 8 章输出
     └── sample-output-minimal.md      降级输出：最小可行报告
+└── docs/
+    ├── preview-hero.jpg           README 首屏预览图
+    └── preview-full.jpg           完整介绍长图（1800×12731）
 ```
 
 **最小运行依赖**：`SKILL.md` + `agents/` + `references/bundled-methods.md`。其余为增强材料，可删。
@@ -324,7 +333,7 @@ industry-painpoint-research/
 
 ## 贡献
 
-欢迎 Issue 和 PR。特别欢迎这几类：
+欢迎 Issue 和 PR。设计演进（v1 → v3 为什么长成现在这样）见 [CHANGELOG.md](./CHANGELOG.md)。特别欢迎这几类：
 
 - **真实行业调研样本** —— 你跑出来的报告（脱敏后）是最好的测试用例
 - **痛点分类补充** —— 哪些行业有第八类痛点清单覆盖不到的？
